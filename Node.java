@@ -1,4 +1,6 @@
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 public class Node {
@@ -19,5 +21,10 @@ public class Node {
     @Override
     public int hashCode() {
         return Objects.hash(name);
+    }
+
+    Map<String, Object> toJsonString(){
+
+        return  new HashMap<>();
     }
 }
